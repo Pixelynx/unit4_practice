@@ -1,0 +1,4 @@
+.thumbnail_url {
+  display: flex;
+  flex-wrap: wrap;
+}
