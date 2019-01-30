@@ -3,7 +3,6 @@ import { Route } from "react-router-dom"
 import axios from "axios";
 import { NavBar } from "./nav";
 import DisplayPosts from "./posts.js";
-import { SingleAlbum } from "./singleAlbum.js";
 import Albums from "./albums.js";
 import './App.css';
 
@@ -29,7 +28,7 @@ class App extends Component {
       </div>
       <div>
         <Route exact path="/posts" component={DisplayPosts} />
-        <Route exact path="/albums" component={Albums} />
+        <Route path="/albums" component={Albums} />
       </div>
       </>
     );
