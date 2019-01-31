@@ -4,6 +4,7 @@ import axios from "axios";
 import { NavBar } from "./nav";
 import DisplayPosts from "./posts.js";
 import Albums from "./albums.js";
+import Users from "./users.js";
 import './App.css';
 
 class App extends Component {
@@ -12,12 +13,6 @@ class App extends Component {
     this.state = {
 
     }
-  }
-
-
-
-  componentDidMount = () => {
-    // this.postsApiCall();
   }
 
   render() {
@@ -29,6 +24,7 @@ class App extends Component {
       <div>
         <Route exact path="/posts" component={DisplayPosts} />
         <Route path="/albums" component={Albums} />
+        <Route path="/users" component={Users} />
       </div>
       </>
     );

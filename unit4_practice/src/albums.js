@@ -41,11 +41,6 @@ class Albums extends Component {
   render() {
     return(
       <>
-        <Route exact path="/albums"
-         render={() => <DisplayAlbums albums={this.state.allAlbums} />
-       }
-         />
-
         <Route path="/albums/:id"
           render={props =>
             <SingleAlbum {...props}
@@ -53,7 +48,6 @@ class Albums extends Component {
               albums={this.state.allAlbums} />
           }
           />
-
       </>
     )
   }
